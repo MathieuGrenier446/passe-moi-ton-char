@@ -1,5 +1,5 @@
 import './App.css'
-import FacebookLoginButton from './components/FacebookLoginButton'
+import FacebookGroupPosts from './components/FacebookGroupPosts'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <FacebookLoginButton/>
+    <FacebookGroupPosts appId='1806425476600064' groupId='639037939134393'/>
     </>
   )
 }
