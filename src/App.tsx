@@ -1,5 +1,8 @@
+import { BrowserRouter, Routes, Route } from 'react-router'
 import './App.css'
 import FacebookGroupPosts from './components/FacebookGroupPosts'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
 
 function App() {
 
@@ -8,9 +11,14 @@ function App() {
   })
 
   return (
-    <>
-    <FacebookGroupPosts appId='1806425476600064' groupId='639037939134393'/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<FacebookGroupPosts appId='1806425476600064' groupId='639037939134393'/>}/>
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+        <Route path="/terms-of-service" element={<TermsOfService/>}/>
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
 
