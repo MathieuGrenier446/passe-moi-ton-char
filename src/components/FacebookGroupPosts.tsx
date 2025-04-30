@@ -130,7 +130,7 @@ const FacebookGroupPosts: React.FC<FacebookLoginProps> = ({
           appId: appId,
           cookie: true,
           xfbml: true,
-          version: 'v18.0'
+          version: 'v22.0'
         });
 
         // Check login status
