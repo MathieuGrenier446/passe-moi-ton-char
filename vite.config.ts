@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: process.env.NODE_ENV === "prod" ? "/passe-moi-ton-char/" : "/"
+  base: process.env.NODE_ENV === "production" ? "/passe-moi-ton-char/" : "/"
 })
