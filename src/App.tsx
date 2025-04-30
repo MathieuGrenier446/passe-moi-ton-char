@@ -6,11 +6,7 @@ import TermsOfService from './pages/TermsOfService'
 import Home from './pages/Home'
 
 function App() {
-
-  FB.getLoginStatus((response) => {
-    console.log(response)
-  })
-
+  
   return (
     <BrowserRouter>
       <Routes>
