@@ -182,7 +182,7 @@ const FacebookGroupPosts: React.FC<FacebookLoginProps> = ({
       // Create OAuth URL - this will open a popup
       const redirectUri = encodeURIComponent(window.location.href);
       const scope = encodeURIComponent('groups_access_member_info,user_managed_groups');
-      const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${appId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=token`;
+      const authUrl = `https://www.facebook.com/v22.0/dialog/oauth?client_id=${appId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=token`;
       
       // Open popup
       const width = 600;
@@ -289,7 +289,7 @@ const FacebookGroupPosts: React.FC<FacebookLoginProps> = ({
 
     try {
       const fields = 'id,message,created_time,from,permalink_url,reactions.summary(true),comments.summary(true)';
-      const apiUrl = `https://graph.facebook.com/v18.0/${groupId}/feed?fields=${fields}&access_token=${accessToken}&limit=25`;
+      const apiUrl = `https://graph.facebook.com/v22.0/${groupId}/feed?fields=${fields}&access_token=${accessToken}&limit=25`;
       
       const response = await fetch(apiUrl);
       const data: FacebookApiResponse = await response.json();
