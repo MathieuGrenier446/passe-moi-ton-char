@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Passe-moi ton char</title>
   </head>
   <body>
-    <div id="root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0&appId=1806425476600064"></script>
     <script src="/src/lib/facebook-login.js"></script>
+    <div id="fb-root"></div>
+    <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  
 </html>
